@@ -115,7 +115,7 @@ class Question(models.Model):
             return False
 
     def __str__(self):
-        return "Question: " + self.contentt
+        return "Question: " + self.content
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
